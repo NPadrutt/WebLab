@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="74a1e374-3d52-446e-bd8f-8f5351050018" name="AWS" url="http://@ec2-34-244-6-133.eu-west-1.compute.amazonaws.com">
+        <fileTransfer host="@ec2-34-244-6-133.eu-west-1.compute.amazonaws.com" port="22" privateKey="C:\Users\ninop\OneDrive\Dokumente\Schule\HSLU\WebLab\key-webprog23.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
