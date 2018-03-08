@@ -1,4 +1,4 @@
-<?php
+<?php header("Content-Type: application/json");
 
 $servername = "localhost";
 $username = "root";
@@ -12,12 +12,10 @@ if ($db->connect_error) {
 }
 
 $sql = "SELECT * FROM Quotes ORDER BY rand() LIMIT 1";
-if($result = $db->query($sql)){
-    $row = $result -> fetch_assoc();
-    
-    echo($row["text"]);
+if($result = $db->query($sql)) {
+    $row = $result->fetch_assoc();
+
+    echo json_encode($row["text"]);
 }
-else{
-    echo(mysqli_error($db));
-    echo("something is wrong");
-}
+
+?>
